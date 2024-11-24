@@ -5,6 +5,7 @@ export const useProductsStore = defineStore('products', () => {
     const products=ref(product)
    const brands=ref(brand)
    const basket=ref([])
-    return { products,brands,basket }
+   const total=ref(0)
+    return { products,brands,basket,total }
   })
   
